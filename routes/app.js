@@ -11,10 +11,12 @@ const notFound = {
 
 router.get("/", (req, res) => {
   res.type("json");
+  console.log("Get request received");
   res.send(JSON.stringify(message));
 });
 router.use("/", (req, res) => {
   res.type("json");
+  console.log("URL not foun");
   res.send(JSON.stringify(notFound));
 });
 
