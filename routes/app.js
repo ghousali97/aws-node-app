@@ -6,7 +6,7 @@ const message = {
   mesage: "Hello world",
 };
 const notFound = {
-  error: "Hello world",
+  error: "Incorrect URL",
 };
 
 router.get("/", (req, res) => {
